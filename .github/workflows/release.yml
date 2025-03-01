@@ -5,7 +5,9 @@ on:
   release:
     types: [released]
 
-permissions: {}
+permissions:
+  contents: write
+  releases: write
 
 defaults:
   run:
