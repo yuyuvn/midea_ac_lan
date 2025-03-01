@@ -1914,6 +1914,7 @@ MIDEA_DEVICES: dict[int, dict[str, dict[str, Any] | str]] = {
                 "translation_key": "remain_time",
                 "name": "Remain Time",
                 "icon": "mdi:progress-clock",
+                "unit": UnitOfTime.SECONDS,
             },
             X0008DBAttributes.detergent_remain: {
                 "type": Platform.SENSOR,

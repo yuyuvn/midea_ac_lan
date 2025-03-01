@@ -456,6 +456,33 @@
       "time_remaining": {
         "name": "Time Remaining"
       },
+      "remain_time": {
+        "name": "Remain Time"
+      },
+      "detergent_remain": {
+        "name": "Detergent Remain"
+      },
+      "softner_remain": {
+        "name": "Softner Remain"
+      },
+      "machine_status": {
+        "name": "Machine Status"
+      },
+      "door_open": {
+        "name": "Door Open"
+      },
+      "dry_filter_clean": {
+        "name": "Dry Filter Clean"
+      },
+      "drain_filter_clean": {
+        "name": "Drain Filter Clean"
+      },
+      "over_capacity": {
+        "name": "Over Capacity"
+      },
+      "fungus_protect": {
+        "name": "Fungus Protect"
+      },
       "top_compartment_remaining": {
         "name": "Top Compartment Remaining"
       },
