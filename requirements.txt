@@ -1,1 +1,1 @@
-midea-local==6.1.0
+git+https://github.com/yuyuvn/midea-local.git@japan-toshiba

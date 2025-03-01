@@ -135,5 +135,7 @@ venv.bak/
 test.py
 cloud_extend.py
 
+venv/
+
 # todo list
 TODO.md

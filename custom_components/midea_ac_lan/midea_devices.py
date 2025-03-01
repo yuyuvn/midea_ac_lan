@@ -48,6 +48,7 @@ from midealocal.devices.fd import DeviceAttributes as FDAttributes
 from midealocal.devices.x26 import DeviceAttributes as X26Attributes
 from midealocal.devices.x34 import DeviceAttributes as X34Attributes
 from midealocal.devices.x40 import DeviceAttributes as X40Attributes
+from midealocal.devices.x0008db import DeviceAttributes as X0008DBAttributes
 
 """
 Entity Naming Rule:
@@ -1907,35 +1908,82 @@ MIDEA_DEVICES: dict[int, dict[str, dict[str, Any] | str]] = {
     0xDB: {
         "name": "Front Load Washer",
         "entities": {
-            DBAttributes.time_remaining: {
+            X0008DBAttributes.remain_time: {
                 "type": Platform.SENSOR,
                 "has_entity_name": True,
-                "translation_key": "time_remaining",
-                "name": "Time Remaining",
+                "translation_key": "remain_time",
+                "name": "Remain Time",
                 "icon": "mdi:progress-clock",
-                "unit": UnitOfTime.MINUTES,
-                "state_class": SensorStateClass.MEASUREMENT,
             },
-            DBAttributes.progress: {
+            X0008DBAttributes.detergent_remain: {
                 "type": Platform.SENSOR,
                 "has_entity_name": True,
-                "translation_key": "progress",
-                "name": "Progress",
-                "icon": "mdi:rotate-360",
+                "translation_key": "detergent_remain",
+                "name": "Detergent Remain",
+                "icon": "mdi:cup-water",
             },
-            DBAttributes.power: {
-                "type": Platform.SWITCH,
+            X0008DBAttributes.softner_remain: {
+                "type": Platform.SENSOR,
                 "has_entity_name": True,
-                "translation_key": "power",
-                "name": "Power",
-                "icon": "mdi:power",
+                "translation_key": "softner_remain",
+                "name": "Softner Remain",
+                "icon": "mdi:cup-water",
             },
-            DBAttributes.start: {
-                "type": Platform.SWITCH,
+            X0008DBAttributes.machine_status: {
+                "type": Platform.SENSOR,
                 "has_entity_name": True,
-                "translation_key": "start",
-                "name": "Start",
-                "icon": "mdi:motion-play-outline",
+                "translation_key": "machine_status",
+                "name": "Machine Status",
+                "icon": "mdi:washing-machine",
+            },
+            X0008DBAttributes.door_open: {
+                "type": Platform.BINARY_SENSOR,
+                "has_entity_name": True,
+                "translation_key": "door_open",
+                "name": "Door Open",
+                "icon": "mdi:door-open",
+            },
+            X0008DBAttributes.dry_filter_clean: {
+                "type": Platform.BINARY_SENSOR,
+                "has_entity_name": True,
+                "translation_key": "dry_filter_clean",
+                "name": "Dry Filter Clean",
+                "icon": "mdi:air-filter",
+            },
+            X0008DBAttributes.drain_filter_clean: {
+                "type": Platform.BINARY_SENSOR,
+                "has_entity_name": True,
+                "translation_key": "drain_filter_clean",
+                "name": "Drain Filter Clean",
+                "icon": "mdi:filter",
+            },
+            X0008DBAttributes.over_capacity: {
+                "type": Platform.BINARY_SENSOR,
+                "has_entity_name": True,
+                "translation_key": "over_capacity",
+                "name": "Over Capacity",
+                "icon": "mdi:weight",
+            },
+            X0008DBAttributes.mode: {
+                "type": Platform.SENSOR,
+                "has_entity_name": True,
+                "translation_key": "mode",
+                "name": "Mode",
+                "icon": "mdi:washing-machine",
+            },
+            X0008DBAttributes.program: {
+                "type": Platform.SENSOR,
+                "has_entity_name": True,
+                "translation_key": "program",
+                "name": "Program",
+                "icon": "mdi:book-open",
+            },
+            X0008DBAttributes.fungus_protect: {
+                "type": Platform.BINARY_SENSOR,
+                "has_entity_name": True,
+                "translation_key": "fungus_protect",
+                "name": "Fungus Protect",
+                "icon": "mdi:mushroom",
             },
         },
     },
