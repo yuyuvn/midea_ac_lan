@@ -93,6 +93,21 @@
       "cooking": {
         "name": "Cooking"
       },
+      "door_open": {
+        "name": "Door Open"
+      },
+      "dry_filter_clean": {
+        "name": "Dry Filter Clean"
+      },
+      "drain_filter_clean": {
+        "name": "Drain Filter Clean"
+      },
+      "over_capacity": {
+        "name": "Over Capacity"
+      },
+      "fungus_protect": {
+        "name": "Fungus Protect"
+      },
       "filter_change_reminder": {
         "name": "Filter Change Reminder"
       },
@@ -467,21 +482,6 @@
       },
       "machine_status": {
         "name": "Machine Status"
-      },
-      "door_open": {
-        "name": "Door Open"
-      },
-      "dry_filter_clean": {
-        "name": "Dry Filter Clean"
-      },
-      "drain_filter_clean": {
-        "name": "Drain Filter Clean"
-      },
-      "over_capacity": {
-        "name": "Over Capacity"
-      },
-      "fungus_protect": {
-        "name": "Fungus Protect"
       },
       "top_compartment_remaining": {
         "name": "Top Compartment Remaining"

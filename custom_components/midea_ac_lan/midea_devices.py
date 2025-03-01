@@ -1943,6 +1943,7 @@ MIDEA_DEVICES: dict[int, dict[str, dict[str, Any] | str]] = {
                 "translation_key": "door_open",
                 "name": "Door Open",
                 "icon": "mdi:door-open",
+                "device_class": BinarySensorDeviceClass.DOOR,
             },
             X0008DBAttributes.dry_filter_clean: {
                 "type": Platform.BINARY_SENSOR,
@@ -1950,6 +1951,7 @@ MIDEA_DEVICES: dict[int, dict[str, dict[str, Any] | str]] = {
                 "translation_key": "dry_filter_clean",
                 "name": "Dry Filter Clean",
                 "icon": "mdi:air-filter",
+                "device_class": BinarySensorDeviceClass.PROBLEM,
             },
             X0008DBAttributes.drain_filter_clean: {
                 "type": Platform.BINARY_SENSOR,
@@ -1957,6 +1959,7 @@ MIDEA_DEVICES: dict[int, dict[str, dict[str, Any] | str]] = {
                 "translation_key": "drain_filter_clean",
                 "name": "Drain Filter Clean",
                 "icon": "mdi:filter",
+                "device_class": BinarySensorDeviceClass.PROBLEM,
             },
             X0008DBAttributes.over_capacity: {
                 "type": Platform.BINARY_SENSOR,
@@ -1964,6 +1967,7 @@ MIDEA_DEVICES: dict[int, dict[str, dict[str, Any] | str]] = {
                 "translation_key": "over_capacity",
                 "name": "Over Capacity",
                 "icon": "mdi:weight",
+                "device_class": BinarySensorDeviceClass.PROBLEM,
             },
             X0008DBAttributes.mode: {
                 "type": Platform.SENSOR,
@@ -1985,6 +1989,7 @@ MIDEA_DEVICES: dict[int, dict[str, dict[str, Any] | str]] = {
                 "translation_key": "fungus_protect",
                 "name": "Fungus Protect",
                 "icon": "mdi:mushroom",
+                "device_class": BinarySensorDeviceClass.RUNNING,
             },
         },
     },
