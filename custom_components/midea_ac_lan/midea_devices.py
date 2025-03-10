@@ -2003,6 +2003,7 @@ MIDEA_DEVICES: dict[int, dict[str, dict[str, Any] | str]] = {
                 "name": "Time Remaining",
                 "icon": "mdi:progress-clock",
                 "unit": UnitOfTime.MINUTES,
+                "device_class": SensorDeviceClass.DURATION,
                 "state_class": SensorStateClass.MEASUREMENT,
             },
             DCAttributes.progress: {
