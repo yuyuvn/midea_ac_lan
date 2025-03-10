@@ -1915,6 +1915,8 @@ MIDEA_DEVICES: dict[int, dict[str, dict[str, Any] | str]] = {
                 "name": "Remain Time",
                 "icon": "mdi:progress-clock",
                 "unit": UnitOfTime.SECONDS,
+                "device_class": SensorDeviceClass.DURATION,
+                "state_class": SensorStateClass.MEASUREMENT,
             },
             X0008DBAttributes.detergent_remain: {
                 "type": Platform.SENSOR,
